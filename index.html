@@ -1,32 +1,139 @@
-<!-- Unit 5 Project
-Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
-[  ] Three Images
-
-Select TWO Additional Features to Add  
-[ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
-[ no ] Feature 3 - Animation
-[ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
-[ no ] Feature 6 - Unique Border Styles
--->
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Fraktur, Times, sans-serif;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
 
-  </style>
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #7e5f5f;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #770515;
+  color: rgb(255, 249, 249);
+  transform: rotateY(180deg);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  display: inline;
+}
+li a {
+  text-decoration: azure;
+  padding: 10px;
+  background-color: rgb(199, 0, 0);
+  color: white;
+}
+</style>
 </head>
 <body>
-
- 
-
-</body>
-</html>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Merchandise Haus Of Gaga.html">Merchandise Haus Of Gaga</a></li>
+  <li><a href="Celebrate ARTPOP's 12th Anniversary.html">ARTPOP 12TH ANNIVERSARY</a></li>
+  <li><a href="Interscope Records.html">Interscope Records</a></li>
+ </ul>
+<h1>DANCE...or DIE.</h1>
+<p>
+  <p>Your special top artist on spotify has a special
+  message to rely to you... </p>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/66/The_Mayhem_Ball_-_Lady_Gaga_%282%29.png" alt="Avatar" style="width:324px;height:350
+      px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Are You Ready To Experience Full Mayhem?</h1> 
+      <p>
+        <span class="first-sentence">As the 0.1% top listener for Lady Gaga
+        on Spotify, you have been specifically selected to attend
+        3 of her FINAL shows in New York City, Madison Square Garden. </span>
+        Are You Ready To Battle For Your LIFE?
+      </p> 
+      <p>Section 416 at Madison Square Garden, ROW 4</p>
+    </div>
+  </div>
+</div>
+<p>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://preview.redd.it/all-tarot-card-images-from-v0-n4jtpjhh1wbf1.png?width=1080&crop=smart&auto=webp&s=eceaadcd1dd64fbb8b328157962a8288dd459fd7" alt="Avatar" style="width:324px;height:350
+      px;">
+     </div>
+    <div class="flip-card-back">
+     <h1>Will You Be Tempted To Face Your Inner Mayhem?</h1> 
+     <p>
+       <span class="first-sentence">Dance the night away in Lady Gaga's Haus Of Mayhem, from hits like "Disease","Abracadabra",
+        and the smash-hit single "Die With A Smile", vanish into the night, and fly with Gaga tonight. </span>
+      </p>
+     </div>
+    </div>
+  </div> 
+  <p>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+  <img src="https://i.redd.it/all-tarot-card-images-from-v0-5ao6dlhh1wbf1.png?width=1650&format=png&auto=webp&s=42bb0060c33f411e8260dcb3baf88af1fe3dbc96" alt="Avatar" style="width:324px;height:350
+      px;">
+  </div>
+    <div class="flip-card-back">
+     <h1>Will You Be Tempted To Face Your Inner Mayhem?</h1> 
+     <p>
+       <span class="first-sentence">"it's not about how many times you get rejected or thought you fell down or you're beaten up. 
+        It's about how many times you stand up and are brave and you keep on going"- Lady Gaga </span>
+      </p>
+     </div>
+    </div>
+  </div> 
+  <h3>Mayhem Ball</h3>
+  <p>----</p>
+ <style>
+  body{
+    background-image: url("background-image: url(https://www.nme.com/wp-content/uploads/2025/08/Lady-Gaga-In-Roblox-Dress-TO-Impress.jpg=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+ </style>
